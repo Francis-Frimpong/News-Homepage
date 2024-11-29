@@ -34,11 +34,12 @@ body {
 .content {
    display: grid;
    column-gap: 30px;
-   row-gap: 40px;
+   row-gap: 60px;
    grid-template-areas: 
     "a a b"
     "c c b"
-    "d d d"
+    "d d d";
+    grid-template-rows: auto 100px auto;
    
 }
 
@@ -68,9 +69,9 @@ body {
 
 .sideBar {
     width:auto;
+    /* box-sizing: border-box; */
     padding: 0 20px;
     background-color: hsl(240, 100%, 5%);
-    
 }
 
 hr {
@@ -79,6 +80,16 @@ hr {
 
 .sideBar h2 {
     color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+}
+
+.sideBar h3 {
+    font-size: 1.4rem;
+}
+
+.sideBar h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
 }
 
 .sideBar, p, hr {
@@ -86,8 +97,9 @@ hr {
 }
 
 .sideBar p {
-    font-size: .85rem;
+    font-size: 1.11rem;
     line-height: 25px;
+
 }
 
 
@@ -126,25 +138,48 @@ hr {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 700;
-    color: hsl(240, 100%, 5%);;
+    color: hsl(240, 100%, 5%);
     
+}
+
+.blog .btn:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    cursor: pointer;
+
+}
+
+.cards {
+    margin-top: 70px;
 }
 
 .card01, .card02, .card03 {
     display: flex;
     margin-right: 20px;
+    width: 100%;
 }
 
-.cardImg {
-    height: 40px;
+.cardImg img{
+    height: 200px;
     
 }
 
 .cardText {
     padding-left: 25px;
-    margin-top: auto;
+    margin-top: -5px;
 }
 
-.cardText >h3 {
-    font-size: 2rem;
+.cardText .cardNum {
+    font-size: 3rem;
+    margin: 0;
+    color: hsl(5, 85%, 63%);    
+}
+
+.cardText .cardTitle {
+    color: hsl(240, 100%, 5%)
+}
+
+.cardText .cardTitle:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;    
 }
