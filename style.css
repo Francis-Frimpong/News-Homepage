@@ -54,6 +54,12 @@ body {
     cursor: pointer;
 } 
 
+.mobileNavLinks .close-icon {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
 .banner-img {
     background-image: url("assets/images/image-web-3-mobile.jpg");
     background-size: cover;
@@ -61,4 +67,85 @@ body {
     background-repeat: no-repeat;
     width: 100%; /* Adjust dimensions as needed */
     height: 300px; /* Example height */
+}
+
+
+.article h1 {
+    width: 70%;
+    font-size: 2rem;
+    color: hsl(240, 100%, 5%);
+}
+
+.blog p {
+    font-size: 14px;
+    line-height: 20px;
+    color:hsl(236, 13%, 42%);
+    margin-bottom: 30px;
+}
+
+.blog .btn {
+    background-color:  hsl(5, 85%, 63%);
+    padding: 12px 25px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(240, 100%, 5%);
+}
+
+
+.blog .btn:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    cursor: pointer;
+}
+
+
+.sideBar {
+    width:auto;
+    /* box-sizing: border-box; */
+    padding: 10px 20px;
+    background-color: hsl(240, 100%, 5%);
+    margin-top: 50px;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+
+.sideBar h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 1.7rem;
+}
+
+.sideBar h3 {
+    font-size: 1rem;
+    color:white
+    
+}
+
+.sideBar h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.sideBar, p, hr {
+    color: hsl(233, 8%, 79%);
+}
+
+.sideBar p {
+    font-size: .8rem;
+    line-height: 25px;
+
+}
+
+.overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 26,0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: none;
 }
